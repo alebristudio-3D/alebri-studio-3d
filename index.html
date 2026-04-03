@@ -9,6 +9,7 @@
     content="Alebri Studio transforma ideas, archivos y conceptos en piezas reales con diseño e impresión 3D. Cotiza tu proyecto por WhatsApp."
   />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
 <body>
   <header class="site-header" id="top">
@@ -81,14 +82,18 @@
             </div>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <span class="orb orb-1"></span>
-            <span class="orb orb-2"></span>
-            <span class="orb orb-3"></span>
+          <div class="hero-visual">
+            <video class="hero-video" autoplay muted loop playsinline>
+              <source src="assets/hero-loop.mp4" type="video/mp4" />
+            </video>
+
+            <div class="hero-overlay"></div>
 
             <div class="hero-card">
               <div class="hero-card-title">Alebri Preview</div>
-              <div class="shape-preview"></div>
+              <p class="muted">
+                Diseño e impresión 3D para piezas personalizadas, prototipos y soluciones funcionales.
+              </p>
             </div>
           </div>
         </div>
@@ -175,13 +180,14 @@
             <h2>Ideas que se volvieron objetos</h2>
           </div>
           <p class="lead">
-            Sustituye estos bloques por tus fotos reales. Mientras más fuerte sea el
-            portafolio, más fácil será convertir visitas en mensajes.
+            Una selección de proyectos que muestran distintas aplicaciones: piezas personalizadas,
+            prototipos, soluciones funcionales y objetos con intención visual.
           </p>
         </div>
 
         <div class="portfolio-grid">
           <article class="portfolio-item tall">
+            <img src="assets/project-01.png" alt="Proyecto Alebri Studio 01" class="portfolio-img" />
             <div>
               <h3>Pieza personalizada</h3>
               <p>Proyecto visual con enfoque en acabado y presencia.</p>
@@ -189,6 +195,7 @@
           </article>
 
           <article class="portfolio-item medium">
+            <img src="assets/project-02.png" alt="Proyecto Alebri Studio 02" class="portfolio-img" />
             <div>
               <h3>Prototipo</h3>
               <p>Validación rápida antes de producción final.</p>
@@ -196,6 +203,7 @@
           </article>
 
           <article class="portfolio-item medium">
+            <img src="assets/project-03.png" alt="Proyecto Alebri Studio 03" class="portfolio-img" />
             <div>
               <h3>Solución funcional</h3>
               <p>Pieza pensada para uso real y ajuste específico.</p>
@@ -203,6 +211,7 @@
           </article>
 
           <article class="portfolio-item">
+            <img src="assets/project-04.png" alt="Proyecto Alebri Studio 04" class="portfolio-img" />
             <div>
               <h3>Objeto creativo</h3>
               <p>Diseño con intención estética y técnica.</p>
@@ -210,9 +219,26 @@
           </article>
 
           <article class="portfolio-item">
+            <img src="assets/project-05.png" alt="Proyecto Alebri Studio 05" class="portfolio-img" />
             <div>
               <h3>Producción por lote</h3>
               <p>Varias piezas, mismo estándar de fabricación.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item">
+            <img src="assets/project-06.png" alt="Proyecto Alebri Studio 06" class="portfolio-img" />
+            <div>
+              <h3>Diseño especial</h3>
+              <p>Proyecto desarrollado a partir de una necesidad específica.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item">
+            <img src="assets/project-07.png" alt="Proyecto Alebri Studio 07" class="portfolio-img" />
+            <div>
+              <h3>Pieza funcional</h3>
+              <p>Fabricación pensada para uso práctico y resolución de problemas.</p>
             </div>
           </article>
         </div>
@@ -274,13 +300,14 @@
             <h2>Cada material responde a un propósito</h2>
           </div>
           <p class="lead">
-            Puedes ajustar estos textos según los materiales que realmente trabajes y el tipo
-            de proyectos que aceptes.
+            Seleccionamos el material según el uso, la resistencia, el acabado y la intención
+            del proyecto.
           </p>
         </div>
 
         <div class="materials">
           <article class="card material-card">
+            <img src="assets/material-pla.png" alt="Material PLA" class="material-img" />
             <div class="material-top">
               <h3>PLA</h3>
               <span class="material-dot"></span>
@@ -291,6 +318,7 @@
           </article>
 
           <article class="card material-card">
+            <img src="assets/material-petg.png" alt="Material PETG" class="material-img" />
             <div class="material-top">
               <h3>PETG</h3>
               <span class="material-dot"></span>
@@ -301,6 +329,7 @@
           </article>
 
           <article class="card material-card">
+            <img src="assets/material-tpu.png" alt="Material TPU" class="material-img" />
             <div class="material-top">
               <h3>TPU</h3>
               <span class="material-dot"></span>
