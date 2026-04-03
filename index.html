@@ -21,7 +21,7 @@
         <span>Alebri Studio</span>
       </a>
 
-      <nav class="nav-links" aria-label="Secciones principales">
+      <nav class="nav-links" aria-label="Secciones principales" id="site-menu">
         <a class="nav-link" href="#servicios">Servicios</a>
         <a class="nav-link" href="#proyectos">Proyectos</a>
         <a class="nav-link" href="#proceso">Proceso</a>
@@ -31,7 +31,7 @@
 
       <div class="nav-actions">
         <a
-          class="btn btn-secondary"
+          class="btn btn-secondary desktop-only"
           href="https://wa.me/5210000000000?text=Hola,%20quiero%20cotizar%20una%20pieza%20con%20Alebri%20Studio"
           target="_blank"
           rel="noopener"
@@ -39,7 +39,46 @@
           WhatsApp
         </a>
         <a
-          class="btn btn-primary"
+          class="btn btn-primary desktop-only"
+          href="https://wa.me/5210000000000?text=Hola,%20quiero%20cotizar%20una%20pieza%20con%20Alebri%20Studio"
+          target="_blank"
+          rel="noopener"
+        >
+          Cotizar
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container mobile-menu-inner">
+        <a class="mobile-link" href="#servicios">Servicios</a>
+        <a class="mobile-link" href="#proyectos">Proyectos</a>
+        <a class="mobile-link" href="#proceso">Proceso</a>
+        <a class="mobile-link" href="#materiales">Materiales</a>
+        <a class="mobile-link" href="#faq">FAQ</a>
+        <a
+          class="btn btn-secondary mobile-btn"
+          href="https://wa.me/5210000000000?text=Hola,%20quiero%20cotizar%20una%20pieza%20con%20Alebri%20Studio"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+        <a
+          class="btn btn-primary mobile-btn"
           href="https://wa.me/5210000000000?text=Hola,%20quiero%20cotizar%20una%20pieza%20con%20Alebri%20Studio"
           target="_blank"
           rel="noopener"
@@ -185,10 +224,11 @@
           </p>
         </div>
 
-        <div class="portfolio-grid">
-          <article class="portfolio-item tall">
+        <div class="portfolio-grid premium-portfolio">
+          <article class="portfolio-item tall featured">
             <img src="assets/project-01.png" alt="Proyecto Alebri Studio 01" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Personalizado</span>
               <h3>Pieza personalizada</h3>
               <p>Proyecto visual con enfoque en acabado y presencia.</p>
             </div>
@@ -196,7 +236,8 @@
 
           <article class="portfolio-item medium">
             <img src="assets/project-02.png" alt="Proyecto Alebri Studio 02" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Prototipo</span>
               <h3>Prototipo</h3>
               <p>Validación rápida antes de producción final.</p>
             </div>
@@ -204,7 +245,8 @@
 
           <article class="portfolio-item medium">
             <img src="assets/project-03.png" alt="Proyecto Alebri Studio 03" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Funcional</span>
               <h3>Solución funcional</h3>
               <p>Pieza pensada para uso real y ajuste específico.</p>
             </div>
@@ -212,7 +254,8 @@
 
           <article class="portfolio-item">
             <img src="assets/project-04.png" alt="Proyecto Alebri Studio 04" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Creativo</span>
               <h3>Objeto creativo</h3>
               <p>Diseño con intención estética y técnica.</p>
             </div>
@@ -220,7 +263,8 @@
 
           <article class="portfolio-item">
             <img src="assets/project-05.png" alt="Proyecto Alebri Studio 05" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Lote</span>
               <h3>Producción por lote</h3>
               <p>Varias piezas, mismo estándar de fabricación.</p>
             </div>
@@ -228,7 +272,8 @@
 
           <article class="portfolio-item">
             <img src="assets/project-06.png" alt="Proyecto Alebri Studio 06" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Especial</span>
               <h3>Diseño especial</h3>
               <p>Proyecto desarrollado a partir de una necesidad específica.</p>
             </div>
@@ -236,7 +281,8 @@
 
           <article class="portfolio-item">
             <img src="assets/project-07.png" alt="Proyecto Alebri Studio 07" class="portfolio-img" />
-            <div>
+            <div class="portfolio-meta">
+              <span class="portfolio-tag">Resolución</span>
               <h3>Pieza funcional</h3>
               <p>Fabricación pensada para uso práctico y resolución de problemas.</p>
             </div>
